@@ -1,6 +1,6 @@
 # Recipe App 
 
-Recipe app is a Django web application to create, save and share food recipes.
+The Recipe App is a Django REST API designed to create, save, and share food recipes. Postgres is used as the database to store and manage the recipe data. The app allows users to perform various operations on the recipes, such as creating, reading, updating, and deleting them.
 
 ## Features
 
