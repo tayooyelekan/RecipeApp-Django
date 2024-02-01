@@ -99,10 +99,10 @@ WSGI_APPLICATION = 'RecipeApp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'efbykrmc',
-        'USER': 'efbykrmc',
-        'PASSWORD': 'XysxXZ5IGItgRoyaQT6wgH_jvGvBU0hL',
-        'HOST': 'berry.db.elephantsql.com'
+        'NAME': 'recipe',
+        'USER': 'admin',
+        'PASSWORD': '12345',
+        'HOST': 'localhost'
     }
 }
 
