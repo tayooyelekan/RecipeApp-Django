@@ -23,7 +23,7 @@ jobs:
                     password: ${{ secrets.DOCKER_PASSWORD }} 
 
             - name: Test
-              run: cat Dockerfile && cat test.txt        
+              run: cat test.txt        
                     
             - name: Build and push Docker image
               uses: docker/build-push-action@v3
