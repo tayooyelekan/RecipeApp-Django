@@ -9,4 +9,4 @@ jobs:
          - name: Get Code from repo
            uses: actions/checkout@v4    
          - name: Find manage.py file
-           run: cat ~/manage.py  
+           run: cat manage.py  
