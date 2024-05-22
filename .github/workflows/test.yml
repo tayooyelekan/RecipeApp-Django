@@ -21,6 +21,9 @@ jobs:
               with:
                     username: ${{ secrets.DOCKER_USERNAME }}
                     password: ${{ secrets.DOCKER_PASSWORD }} 
+
+            - name: Test
+              run: cat Dockerfile && cat test.txt        
                     
             - name: Build and push Docker image
               uses: docker/build-push-action@v3
