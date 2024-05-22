@@ -6,7 +6,6 @@ WORKDIR /app
 
 # Clone the project repository
 COPY . .
-
 # Install project dependencies
 #COPY requirements.txt .
 COPY requirements.txt .
