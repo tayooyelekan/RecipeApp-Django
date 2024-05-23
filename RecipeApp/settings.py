@@ -102,7 +102,7 @@ DATABASES = {
         'NAME': 'recipe',
         'USER': 'admin',
         'PASSWORD': '12345',
-        'HOST': 'localhost'
+        'HOST': 'database'
     }
 }
 
