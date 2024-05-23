@@ -16,4 +16,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 8000
 
 # Start the Django app using Gunicorn
-CMD python manage.py migrate && gunicorn -b 0.0.0.0:800 RecipeApp.wsgi:application
+CMD python manage.py migrate && gunicorn -b 0.0.0.0:8000 RecipeApp.wsgi:application
