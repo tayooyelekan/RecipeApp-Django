@@ -39,4 +39,4 @@ jobs:
                 ssh-private-key: ${{ secrets.EC2_PRIVATE_KEY }}
             - name: Run SSH command
               run: |
-                  ssh -o StrictHostKeyChecking=no ubuntu@ec2-44-222-227-27.compute-1.amazonaws.com 'echo "Hello, World!"'    
+                  ssh -o StrictHostKeyChecking=no ubuntu@ec2-44-222-227-27.compute-1.amazonaws.com 'docker compose up -d'    
