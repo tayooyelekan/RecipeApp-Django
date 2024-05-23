@@ -48,5 +48,14 @@ jobs:
               uses: docker/setup-buildx-action@v2
           
             - name: Pull Docker image
-              run: docker pull ${{ secrets.DOCKER_USERNAME }}/recipeapp-django       
+              run: docker pull ${{ secrets.DOCKER_USERNAME }}/recipeapp-django   
+              
+            - name: Save Docker image
+              run: docker save -o image.tar ${{ secrets.DOCKER_USERNAME }}/recipeapp-django
+        
+            - name: Upload Docker image artifact
+              uses: actions/upload-artifact@v3
+              with:
+                name: docker-image
+                path: image.tar
 
