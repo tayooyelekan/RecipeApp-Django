@@ -29,14 +29,14 @@ jobs:
                 context: .
                 push: true
                 tags: tayo9/recipeapp-django 
-    deploy:
-        runs-on: ubuntu-latest
-        needs: build
-        steps:
-            - name: Setup SSH
-              uses: webfactory/ssh-agent@v0.5.4
-              with:
-                ssh-private-key: ${{ secrets.EC2_PRIVATE_KEY }}
-            - name: Run SSH command
-              run: |
-                  ssh -o StrictHostKeyChecking=no ubuntu@ec2-44-222-227-27.compute-1.amazonaws.com 'docker compose pull && docker compose up --force-recreate -d'    
+    # deploy:
+    #     runs-on: ubuntu-latest
+    #     needs: build
+    #     steps:
+    #         - name: Setup SSH
+    #           uses: webfactory/ssh-agent@v0.5.4
+    #           with:
+    #             ssh-private-key: ${{ secrets.EC2_PRIVATE_KEY }}
+    #         - name: Run SSH command
+    #           run: |
+    #               ssh -o StrictHostKeyChecking=no ubuntu@ec2-44-222-227-27.compute-1.amazonaws.com 'docker compose pull && docker compose up --force-recreate -d'    
